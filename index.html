@@ -14,7 +14,13 @@
 <body>
   <main class="page">
     <nav class="nav" aria-label="Primary navigation">
-      <img class="brand" src="assets/livesticker-logo.svg" alt="LiveSticker">
+      <a class="brand" href="./" aria-label="LiveSticker">
+        <picture>
+          <source srcset="assets/app-icon-dark.svg" media="(prefers-color-scheme: dark)">
+          <img src="assets/app-icon.svg" alt="">
+        </picture>
+        <span>LiveSticker</span>
+      </a>
       <div class="nav-links">
         <a href="./">Support</a>
         <a href="privacy.html">Privacy</a>
@@ -22,7 +28,10 @@
     </nav>
 
     <section class="hero">
-      <img class="hero-icon" src="assets/app-icon.svg" alt="">
+      <picture class="hero-icon">
+        <source srcset="assets/app-icon-dark.svg" media="(prefers-color-scheme: dark)">
+        <img src="assets/app-icon.svg" alt="">
+      </picture>
       <h1>How can we help?</h1>
       <p class="lead">
         LiveSticker turns Live Photos into animated stickers directly on your iPhone.
